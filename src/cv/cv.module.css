@@ -1,0 +1,115 @@
+/* cv.module.css */
+
+.resume {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("/assets/background-pattern.png"); /* можешь поменять на свой */
+  background-size: cover;
+}
+
+.leftPanel {
+  width: 30%;
+  background-color: #2b2d42;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.position {
+  font-size: 20px;
+  color: #8d99ae;
+  margin-bottom: 25px;
+}
+
+.sectionTitle {
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 2px solid #ef233c;
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.list li {
+  margin-bottom: 8px;
+}
+
+.list li i {
+  color: #ef233c;
+  margin-right: 8px;
+}
+
+.sublist {
+  list-style: disc inside;
+  margin-top: 6px;
+  margin-left: 16px;
+}
+
+.downloadButton {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ef233c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #d90429;
+}
+
+@media (max-width: 768px) {
+  .resume {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .leftPanel {
+    width: 100%;
+    align-items: center;
+  }
+}
