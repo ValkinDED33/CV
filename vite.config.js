@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { fileURLToPath } from "url";
 
-// Эмуляция __dirname в ESM
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -11,8 +10,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     sourcemap: true,
+    outDir: "dist",
   },
-  base: "/CV/", // Убедитесь, что путь соответствует развертыванию
+  base: "/CV/", // обязательно: имя репозитория
   resolve: {
     alias: {
       src: path.resolve(__dirname, "./src"),
