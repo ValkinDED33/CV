@@ -1,0 +1,70 @@
+/* Универсальное поведение коробки */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Базовая типографика и сглаживание */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  font-family: system-ui, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Удаление отступов у часто используемых элементов */
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+figcaption,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Удаляем маркеры у всех списков */
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Наследуем шрифт в формах */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Ссылки без классов — читаемые подчёркивания */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: inherit;
+}
+
+/* Разумный отступ внутри статей */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Удаление анимаций при пользовательском запросе */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

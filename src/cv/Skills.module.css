@@ -1,0 +1,56 @@
+/* Новый класс для принудительного перехода на новую страницу */
+.pageBreak {
+  page-break-before: always; /* для печати */
+  break-before: page; /* для современных браузеров */
+}
+
+/* Запрет на разрывы внутри блоков */
+.avoidBreak {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* Остальные стили без изменений (или сжатые, как ранее) */
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid #ef476f;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+  text-align: left;
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.skillItem {
+  margin-bottom: 8px;
+}
+
+.progressBar {
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 3px;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease-in-out;
+}
+
+.tech {
+  background-color: #4caf50;
+}
+
+.soft {
+  background-color: #2196f3;
+}

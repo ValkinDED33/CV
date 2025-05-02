@@ -1,8 +1,16 @@
-import Cv from "src/cv/cv.jsx"; // Импортируем компонент Cv
+import Cv from "./cv/cv"; // Импортируем компонент Cv
+import background from "./assets/background.jpg"; // Импортируем фоновое изображение
 
 const App = () => {
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "repeat",
+        minHeight: "100vh",
+        padding: "2rem",
+      }}
+    >
       {/* Рендерим компонент Cv */}
       <Cv />
     </div>

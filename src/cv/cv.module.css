@@ -1,39 +1,45 @@
-/* cv.module.css */
-
+/* Основной контейнер резюме */
 .resume {
   display: flex;
-  max-width: 1200px;
-  margin: 40px auto;
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  width: 100%; /* 100% ширины экрана */
+  max-width: 210mm; /* Максимальная ширина для больших экранов */
+  min-height: 297mm;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("/assets/background-pattern.png"); /* можешь поменять на свой */
-  background-size: cover;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  box-sizing: border-box; /* Обеспечивает правильный расчет размеров */
 }
 
+/* Левый блок */
 .leftPanel {
-  width: 30%;
-  background-color: #2b2d42;
+  flex: 0 1 35%; /* flex-grow, flex-shrink, flex-basis */
+  background-color: #600ab6;
   color: #fff;
-  padding: 40px 20px;
+  padding: 40px 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  gap: 32px;
+  page-break-inside: avoid; /* избегаем разрыва внутри блока */
 }
 
-.photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 12px;
-  overflow: hidden;
-  background-color: #ccc;
+/* Фото профиля */
+.photoWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+}
+
+.photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid #fff;
 }
 
 .photo img {
@@ -42,74 +48,203 @@
   object-fit: cover;
 }
 
-.name {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.position {
-  font-size: 20px;
-  color: #8d99ae;
-  margin-bottom: 25px;
-}
-
+/* Заголовки */
 .sectionTitle {
-  font-size: 22px;
-  font-weight: bold;
-  border-bottom: 2px solid #ef233c;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid #ef476f;
   padding-bottom: 6px;
-  margin-bottom: 16px;
-  text-align: left;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
+/* Контактный список */
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  word-break: break-word;
+}
+
+.contactList a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contactList a:hover {
+  color: #ef476f;
+}
+
+/* Навыки и языки */
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .list li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
-.list li i {
-  color: #ef233c;
-  margin-right: 8px;
-}
-
-.sublist {
-  list-style: disc inside;
-  margin-top: 6px;
-  margin-left: 16px;
-}
-
+/* Кнопка загрузки */
 .downloadButton {
-  margin-top: 30px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ef233c;
-  color: #fff;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #ef476f;
+  color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .downloadButton:hover {
   background-color: #d90429;
 }
 
+/* Правый блок */
+.rightPanel {
+  flex: 1;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: #2d3748;
+  page-break-inside: avoid; /* предотвращаем разрыв блока */
+}
+
+/* Заголовки */
+.name {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.position {
+  font-size: 16px;
+  text-align: center;
+  color: #718096;
+  margin-bottom: 16px;
+}
+
+/* Параграфы */
+.rightPanel p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Элементы проектов и опыта */
+.projectItem,
+.experienceItem {
+  margin-bottom: 16px;
+}
+
+.projectItem h4,
+.experienceItem strong {
+  font-size: 16px;
+  color: #333;
+}
+
+.projectItem a {
+  color: #600ab6;
+  text-decoration: none;
+}
+
+.projectItem a:hover {
+  text-decoration: underline;
+}
+
+/* Блоки Soft Skills и Education */
+.softSkills,
+.education {
+  page-break-inside: avoid; /* предотвращаем разрыв */
+  margin-bottom: 20px;
+}
+
+/* Блок Soft Skills */
+.softSkills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.softSkills li {
+  margin-bottom: 10px;
+}
+
+/* Блок Education */
+.education {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Медиазапросы */
 @media (max-width: 768px) {
   .resume {
     flex-direction: column;
-    padding: 20px;
+    width: 100%;
+    min-height: auto;
+    box-shadow: none;
+    max-width: 100%; /* Убедитесь, что не будет выходить за пределы экрана */
   }
 
-  .leftPanel {
+  .leftPanel,
+  .rightPanel {
     width: 100%;
-    align-items: center;
+    padding: 24px;
+  }
+
+  .name,
+  .position {
+    text-align: center;
+  }
+}
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    margin: 0;
+    padding: 0;
+  }
+
+  .resume {
+    box-shadow: none;
+    page-break-after: always;
+  }
+
+  .leftPanel,
+  .rightPanel,
+  .projectItem,
+  .experienceItem,
+  .education {
+    page-break-inside: avoid;
+  }
+
+  .html2pdf__page-break {
+    display: block;
+    height: 1px;
+    break-before: page;
+  }
+
+  .downloadButton {
+    display: none !important;
   }
 }
