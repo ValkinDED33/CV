@@ -1,4 +1,4 @@
-import styles from "./skills.module.css";
+import styles from "./Skills.module.css"; // ✔️ с большой буквы "S"
 
 const Skills = ({ techSkills = [], softSkills = [] }) => {
   return (
