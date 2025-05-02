@@ -12,7 +12,7 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
-  base: "/goit-react-hw-01/",
+  base: "/CV/", // Убедитесь, что путь соответствует развертыванию
   resolve: {
     alias: {
       src: path.resolve(__dirname, "./src"),
