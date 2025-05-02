@@ -1,4 +1,4 @@
-import Cv from "./cv/cv"; // Импортируем компонент Cv
+import Cv from "./cv/cv.jsx"; // Импортируем компонент Cv
 import background from "./assets/background.jpg"; // Импортируем фоновое изображение
 
 const App = () => {
