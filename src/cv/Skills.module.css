@@ -1,16 +1,26 @@
-/* Новый класс для принудительного перехода на новую страницу */
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+/* Каждая секция занимает ровно полстраницы при печати */
+.pageHalf {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Принудительный перенос на новую страницу */
 .pageBreak {
-  page-break-before: always; /* для печати */
-  break-before: page; /* для современных браузеров */
+  break-before: page;
+  page-break-before: always;
 }
 
-/* Запрет на разрывы внутри блоков */
-.avoidBreak {
-  break-inside: avoid;
-  page-break-inside: avoid;
-}
-
-/* Остальные стили без изменений (или сжатые, как ранее) */
+/* Стилизация заголовков секций */
 .sectionTitle {
   font-size: 18px;
   font-weight: 600;
@@ -21,6 +31,7 @@
   width: 100%;
 }
 
+/* Список навыков */
 .list {
   list-style: none;
   padding: 0;
@@ -29,16 +40,18 @@
   line-height: 1.4;
 }
 
+/* Отступы между элементами списка */
 .skillItem {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
+/* Прогресс-бары */
 .progressBar {
   height: 5px;
   background-color: #e0e0e0;
   border-radius: 3px;
   overflow: hidden;
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
 .progressFill {
