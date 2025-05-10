@@ -83,6 +83,9 @@ const Cv = () => {
                   </a>
                 </h4>
                 <p>
+                  <strong>Role:</strong> {project.role}
+                </p>
+                <p>
                   <strong>Technologies:</strong> {project.technologies}
                 </p>
                 <p>

@@ -76,13 +76,6 @@ const profileData = {
       github: "https://github.com/ValkinDED33/goit-js-hw-12",
     },
     {
-      name: "Portfolio with Swiper",
-      role: "Frontend Developer",
-      technologies: "HTML, CSS, JavaScript, Swiper",
-      link: "https://valkinded33.github.io/goit-markup-hw-06/",
-      github: "https://github.com/ValkinDED33/goit-markup-hw-06",
-    },
-    {
       name: "Contact Book App",
       role: "Fullstack Developer",
       technologies: "React, Redux Toolkit, MockAPI, Vite",
@@ -110,7 +103,6 @@ const profileData = {
       institution: "IT School GoIT",
       year: "2023",
     },
-    // Інші навчальні записи
   ],
   workExperience: [
     {
@@ -119,10 +111,8 @@ const profileData = {
       achievements: [
         "Developed a contact management app using React, Redux Toolkit, and Vite.",
         "Implemented async actions with createAsyncThunk for fetching data from the backend.",
-        // Інші досягнення
       ],
     },
-    // Інший досвід
   ],
 };
 
