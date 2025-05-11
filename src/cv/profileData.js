@@ -2,39 +2,37 @@ const profileData = {
   name: "Ihor Skrypka",
   position: "Junior Fullstack Developer",
   summary:
-    "Passionate and dedicated Junior Fullstack Developer with hands-on experience in front-end and back-end development. Skilled in building responsive web applications and eager to learn new technologies and improve coding skills.",
+    "Passionate and dedicated Junior Fullstack Developer with hands-on experience in React, Node.js, MongoDB, and TypeScript. Skilled in building responsive web applications and eager to learn new technologies and improve coding skills.",
   contacts: [
     {
-      icon: "📞",
       label: "Phone",
       value: "+48 577 829 457",
       link: "tel:+48577829457",
     },
     {
-      icon: "✉️",
       label: "Email",
       value: "sonyierik289@gmail.com",
       link: "mailto:sonyierik289@gmail.com",
     },
     {
-      icon: "📱",
       label: "Telegram",
       value: "@ValkinDED_PL",
       link: "https://t.me/ValkinDED_PL",
     },
     {
-      icon: "🔗",
       label: "LinkedIn",
       value: "Ihor Skrypka",
       link: "https://linkedin.com/in/ihor-skrypka-678096359",
     },
     {
-      icon: "🐙",
       label: "GitHub",
       value: "ValkinDED33",
       link: "https://github.com/ValkinDED33",
     },
-    { icon: "📍", label: "Location", value: "Poland, Katowice" },
+    {
+      label: "Location",
+      value: "Poland, Katowice",
+    },
   ],
   techSkills: [
     "Node.js",
@@ -69,41 +67,48 @@ const profileData = {
       github: "https://github.com/ValkinDED33/goit-markup-hw-06",
     },
     {
-      name: "Image Search App",
+      name: "Feedback Form & Modal Logic",
       role: "Frontend Developer",
-      technologies: "JavaScript, Pixabay API, Axios, SimpleLightbox",
-      link: "https://valkinded33.github.io/goit-js-hw-12/",
-      github: "https://github.com/ValkinDED33/goit-js-hw-12",
+      technologies: "JavaScript, LocalStorage, DOM Manipulation",
+      link: "https://valkinded33.github.io/goit-js-hw-09/",
+      github: "https://github.com/ValkinDED33/goit-js-hw-09",
     },
     {
-      name: "Contact Book App",
+      name: "Phonebook App (React + Redux)",
       role: "Fullstack Developer",
-      technologies: "React, Redux Toolkit, MockAPI, Vite",
-      link: "https://valkinded33.github.io/goit-react-hw-07/",
-      github: "https://github.com/ValkinDED33/goit-react-hw-07",
+      technologies: "React, Redux Toolkit, Redux Persist, Vite",
+      link: "https://goit-react-hw-08-ten-blue.vercel.app",
+      github: "https://github.com/ValkinDED33/goit-react-hw-08",
     },
     {
-      name: "TypeScript Basic & Generics",
+      name: "Movie Search App",
       role: "Frontend Developer",
-      technologies: "TypeScript, Vite",
-      link: "https://valkinded33.github.io/goit-typescript-hw-01/",
-      github: "https://github.com/ValkinDED33/goit-typescript-hw-01",
+      technologies: "React, React Router, TMDB API, Lazy Loading",
+      link: "https://goit-react-hw-05-taupe-three.vercel.app",
+      github: "https://github.com/ValkinDED33/goit-react-hw-05",
     },
     {
-      name: "Node.js Contact App",
-      role: "Backend Developer",
-      technologies: "Node.js, Faker.js",
-      link: "https://valkinded33.github.io/nodejs-hw-01/",
-      github: "https://github.com/ValkinDED33/nodejs-hw-01",
+      name: "Image Finder App",
+      role: "Frontend Developer",
+      technologies: "React, Axios, Pixabay API, TypeScript",
+      link: "https://vercel.com/valkindeds-projects/goit-react-hw-01",
+      github: "https://github.com/ValkinDED33/goit-react-hw-01",
     },
   ],
+
   education: [
     {
       degree: "Junior Fullstack Developer",
       institution: "IT School GoIT",
-      year: "2023",
+      year: "2025",
+    },
+    {
+      degree: "Bachelor of Computer Science",
+      institution: "Odesa National University",
+      year: "2015",
     },
   ],
+
   workExperience: [
     {
       position: "Junior Fullstack Developer (Internship Project)",

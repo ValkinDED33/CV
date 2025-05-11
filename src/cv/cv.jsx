@@ -31,7 +31,6 @@ const Cv = () => {
           <ul className={styles.contactList}>
             {profileData.contacts.map((contact, index) => (
               <li key={index}>
-                {contact.icon}{" "}
                 {contact.link ? (
                   <a
                     href={contact.link}
@@ -66,7 +65,15 @@ const Cv = () => {
 
           <section>
             <h2 className={styles.sectionTitle}>Summary</h2>
-            <p>{profileData.summary}</p>
+            <p>
+              Passionate and dedicated Junior Fullstack Developer with hands-on
+              experience in both front-end and back-end development. I am
+              proficient in creating dynamic, responsive web applications using
+              technologies such as React, Node.js, and TypeScript. Always eager
+              to expand my skill set and tackle new challenges, I am committed
+              to delivering high-quality code and collaborating with teams to
+              build innovative solutions.
+            </p>
           </section>
 
           <section>

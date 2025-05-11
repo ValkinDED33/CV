@@ -35,11 +35,11 @@
 }
 
 .photo {
-  width: 160px;
-  height: 160px;
+  width: 250px;
+
   border-radius: 12px;
   overflow: hidden;
-  border: 3px solid #fff;
+  border: 3px solid #fc0000;
 }
 
 .photo img {
