@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import html2pdf from "html2pdf.js";
-import profileData from "./profileData"; // Импорт данных
-import Skills from "./Skills"; // Компонент для отображения навыков
+import profileData from "./profileData";
+import Skills from "./Skills";
 import styles from "./cv.module.css";
 import photo from "./photo.jpg";
 
@@ -27,7 +27,7 @@ const Cv = () => {
             <img src={photo} alt="Profile" className={styles.photo} />
           </div>
 
-          <h2 className={styles.sectionTitle}>Contact Me</h2>
+          <h2 className={styles.sectionTitle}>Contacts</h2>
           <ul className={styles.contactList}>
             {profileData.contacts.map((contact, index) => (
               <li key={index}>
@@ -95,6 +95,7 @@ const Cv = () => {
                 <p>
                   <strong>Technologies:</strong> {project.technologies}
                 </p>
+                <p>{project.description}</p>
                 <p>
                   <a
                     href={project.github}

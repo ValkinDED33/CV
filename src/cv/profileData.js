@@ -65,6 +65,8 @@ const profileData = {
       technologies: "HTML, SASS, BEM, Responsive Design",
       link: "https://valkinded33.github.io/goit-markup-hw-06/",
       github: "https://github.com/ValkinDED33/goit-markup-hw-06",
+      description:
+        "Created a responsive landing page for a digital agency using semantic HTML and BEM methodology. Applied modern layout techniques and ensured mobile-friendly design for an optimal user experience.",
     },
     {
       name: "Feedback Form & Modal Logic",
@@ -72,6 +74,8 @@ const profileData = {
       technologies: "JavaScript, LocalStorage, DOM Manipulation",
       link: "https://valkinded33.github.io/goit-js-hw-09/",
       github: "https://github.com/ValkinDED33/goit-js-hw-09",
+      description:
+        "Built an interactive feedback form with auto-save functionality using LocalStorage. Added modal window logic and event-driven user interactions with vanilla JavaScript.",
     },
     {
       name: "Phonebook App (React + Redux)",
@@ -79,6 +83,8 @@ const profileData = {
       technologies: "React, Redux Toolkit, Redux Persist, Vite",
       link: "https://goit-react-hw-08-ten-blue.vercel.app",
       github: "https://github.com/ValkinDED33/goit-react-hw-08",
+      description:
+        "Developed a full-featured contact book with registration, login, and persistent state using Redux Persist. Implemented private and public routes, form validation, and CRUD operations for managing contacts.",
     },
     {
       name: "Movie Search App",
@@ -86,6 +92,8 @@ const profileData = {
       technologies: "React, React Router, TMDB API, Lazy Loading",
       link: "https://goit-react-hw-05-taupe-three.vercel.app",
       github: "https://github.com/ValkinDED33/goit-react-hw-05",
+      description:
+        "Implemented a movie browsing app using React and data from the TMDB API. Enabled navigation between movie details, cast, and reviews using React Router and lazy loading for performance optimization.",
     },
     {
       name: "Image Finder App",
@@ -93,6 +101,8 @@ const profileData = {
       technologies: "React, Axios, Pixabay API, TypeScript",
       link: "https://vercel.com/valkindeds-projects/goit-react-hw-01",
       github: "https://github.com/ValkinDED33/goit-react-hw-01",
+      description:
+        "Created an image search application with asynchronous data fetching and pagination. Refactored the project using TypeScript for better type safety and code maintainability.",
     },
   ],
 
